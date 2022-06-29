@@ -1,17 +1,6 @@
 # List of product links
-
-cerave = 'https://www.gopicky.com/cerave/products'
-the_ordinary = 'https://www.gopicky.com/theordinary/products'
-good_molecules = 'https://www.gopicky.com/goodmolecules/products'
-paulas_choice = 'https://www.gopicky.com/paulaschoice/products'
-the_inkey_list =  'https://www.gopicky.com/theinkeylist/products'
-black_girl_sunscreen = 'https://www.gopicky.com/blackgirlsunscreen/products'
-nivea = 'https://www.gopicky.com/nivea/products'
-dove = 'https://www.gopicky.com/dove/products'
-naturium = 'https://www.gopicky.com/naturium/products'
-cetaphil = 'https://www.gopicky.com/cetaphil/products'
-simple = 'https://www.gopicky.com/simple/products'
-neutrogena =  'https://www.gopicky.com/neutrogena/products'
-vaseline = 'https://www.gopicky.com/vaseline/products'
-pixi = 'https://www.gopicky.com/pixi/products'
-la_roche_posay = 'https://www.gopicky.com/larocheposay/products'
+product_links = ['https://www.gopicky.com/cerave/products','https://www.gopicky.com/theordinary/products','https://www.gopicky.com/goodmolecules/products',
+                'https://www.gopicky.com/paulaschoice/products','https://www.gopicky.com/theinkeylist/products','https://www.gopicky.com/blackgirlsunscreen/products',
+                'https://www.gopicky.com/nivea/products','https://www.gopicky.com/dove/products','https://www.gopicky.com/naturium/products','https://www.gopicky.com/cetaphil/products'
+                'https://www.gopicky.com/simple/products','https://www.gopicky.com/neutrogena/products','https://www.gopicky.com/vaseline/products',
+                'https://www.gopicky.com/pixi/products','https://www.gopicky.com/larocheposay/products']
