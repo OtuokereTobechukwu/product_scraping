@@ -69,12 +69,8 @@ for page in range(0,total_search_results()):
 
     next_page = driver.find_element(by=By.XPATH, value = '//*[@id="__next"]/main/div[3]/div/div/nav/ul/li[7]/button')
     print("Next page button found")
-    try:
-        next_page.click()
-        time.sleep(2)
-    except:
-        print('Cannot find next page button')
-        break
+    next_page.click()
+    time.sleep(2)
     driver.refresh()
     time.sleep(3) # Refresh page
 
