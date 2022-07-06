@@ -56,7 +56,7 @@ for page in range(0,total_search_results()):
             attrss = attr.text
             attrs.append(attrss)
         # Include each product detail in product_dict
-        product_dict[product.index(p)] = {'brand':product_brand, 'product_name':product_name, 'product_rating':rating, 'product_attributes':attrs}
+        product_dict[str(product.index(p))+str(page)] = {'brand':product_brand, 'product_name':product_name, 'product_rating':rating, 'product_attributes':attrs}
 
         # Close product link tab and get back to previous tab
         driver.close()
@@ -77,7 +77,7 @@ for page in range(0,total_search_results()):
     
 print('Scraping Done')
 
-print(product_dict)
+print(len(product_dict))
 #Create a dataframe from product_dict
 # df = pd.DataFrame.from_dict(product_dict, orient='index')
 
