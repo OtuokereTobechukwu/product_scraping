@@ -13,7 +13,8 @@ product_attributes = []
 
 current_window = get_product_window()
 
-for pages in range(total_search_results):
+for pages in range(total_search_results()):
+    # Loop through all products on the page
     for item in products:
         product_detail, product_attribute = get_product_details(parent_table)
         brand = get_brand_name(product_detail)
@@ -24,6 +25,9 @@ for pages in range(total_search_results):
         driver.close()
         driver.switch_to.window(current_window)
         
+
+# select rows in a dataframe based on a conditiona
+
 
 
 
