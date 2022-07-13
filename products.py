@@ -14,18 +14,6 @@ def total_search_results():
     total_search_results = int(driver.find_element(by=By.XPATH, value = '//*[@id="productSection"]/div[1]/p').text.split(" ")[0])
     return total_search_results
 
-def next_page():
-    while True:
-        current_page_number = int(driver.find_element_by_css_selector('.jss248 .MuiPagination-ul li button').text)
-
-        print(f"Processing page {current_page_number}..")
-
-        try:
-            next_page_link = driver.find_element_by_xpath(f'.//li[span = "{current_page_number + 1}"]')
-            next_page_link.click()
-        except:
-            print(f"Exiting. Last page: {current_page_number}.")
-            break
 
 def get_product_window():
     restaurant_window = driver.window_handles[0]
